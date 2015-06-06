@@ -3,7 +3,7 @@ Implementation of Apache Commons Configuration
 
 ### Project Highlights:
 * Simple API:
-  * ConfigReader(ConfigFilePath) : constructor
+  * ConfigurationReader(ConfigFilePath) : constructor
    * get(key) -> returns String value
 
 ## Eclipse Project Setup (Requires Maven)
