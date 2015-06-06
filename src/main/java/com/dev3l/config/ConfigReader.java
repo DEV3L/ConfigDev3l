@@ -13,7 +13,7 @@ public class ConfigReader {
 		configuration = new PropertiesConfiguration(getFilePath(fileName).getPath());
 	}
 	
-	public String getProperty(final String key) {
+	public String get(final String key) {
 		return configuration.getString(key);
 	}
 	
