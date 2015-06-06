@@ -8,16 +8,20 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 
 public class ConfigurationReader {
 	protected AbstractConfiguration configuration = null;
-	
+
+	@Deprecated
+	public ConfigurationReader() {
+	}
+
 	public ConfigurationReader(final String fileName) throws ConfigurationException {
 		configuration = new PropertiesConfiguration(getFilePath(fileName).getPath());
 	}
-	
+
 	public String get(final String key) {
 		return configuration.getString(key);
 	}
-	
-	private URL getFilePath(String fileName) {
+
+	private URL getFilePath(final String fileName) {
 		URL configFilePath = this.getClass().getClassLoader().getResource(fileName);
 
 		if (configFilePath == null) {
@@ -26,7 +30,7 @@ public class ConfigurationReader {
 				throw new RuntimeException("Resource not found: " + fileName);
 			}
 		}
-		
+
 		return configFilePath;
 	}
 }
