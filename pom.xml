@@ -4,7 +4,7 @@
   <groupId>com.dev3l.config</groupId>
   <artifactId>ConfigurationDev3l</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>trunk-SNAPSHOT</version>
   <name>ConfigurationDev3l</name>
   <url>http://maven.apache.org</url>
 
