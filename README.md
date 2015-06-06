@@ -3,8 +3,8 @@ Implementation of Apache Commons Configuration
 
 ### Project Highlights:
 * Simple API:
-  * RandomSaltGenerator.createSalt() -> returns  [Hex encoded] String
-  * Pbkdf2Encrypter.encrypt(password, salt) -> returns  [Hex encoded] String
+  * ConfigReader(ConfigFilePath) : constructor
+   * get(key) -> returns String value
 
 ## Eclipse Project Setup (Requires Maven)
  * git clone the project
