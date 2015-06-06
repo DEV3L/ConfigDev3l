@@ -6,10 +6,10 @@ import org.apache.commons.configuration.AbstractConfiguration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 
-public class ConfigReader {
+public class ConfigurationReader {
 	protected AbstractConfiguration configuration = null;
 	
-	public ConfigReader(final String fileName) throws ConfigurationException {
+	public ConfigurationReader(final String fileName) throws ConfigurationException {
 		configuration = new PropertiesConfiguration(getFilePath(fileName).getPath());
 	}
 	
@@ -23,7 +23,7 @@ public class ConfigReader {
 		if (configFilePath == null) {
 			configFilePath = this.getClass().getResource(fileName);
 			if (configFilePath == null) {
-				throw new RuntimeException("Config resource " + fileName + " was not found on the classpath.");
+				throw new RuntimeException("Resource not found: " + fileName);
 			}
 		}
 		
