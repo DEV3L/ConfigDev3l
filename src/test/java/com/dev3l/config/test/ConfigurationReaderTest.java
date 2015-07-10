@@ -1,4 +1,4 @@
-package com.dev3l.conig.test;
+package com.dev3l.config.test;
 
 import org.apache.commons.configuration.ConfigurationException;
 import org.junit.Assert;
