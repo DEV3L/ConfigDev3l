@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DEV3L/java-properties-configuration.png)](https://travis-ci.org/DEV3L/java-properties-configuration)
+
 # java-properties-configuration
 Implementation of Apache Commons Configuration
 
