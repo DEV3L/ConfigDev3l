@@ -1,4 +1,4 @@
-# ConfigDev3l
+# java-properties-configuration
 Implementation of Apache Commons Configuration
 
 ### Project Highlights:
